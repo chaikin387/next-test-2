@@ -1,0 +1,130 @@
+{
+	"category": {
+		"name": "Завтраки",
+		"slug": "zavtraki",
+		"position": 2,
+		"isActive": true
+	},
+	"categoryAttributes": [
+		{
+			"attribute": {
+				"name": "Количество",
+				"slug": "kolichestvo",
+				"type": "SELECT"
+			},
+			"isRequired": true,
+			"position": 0,
+			"values": [
+				{ "value": "1 шт", "slug": "1-sht", "position": 0 },
+				{ "value": "2 шт", "slug": "2-sht", "position": 1 },
+				{ "value": "3 шт", "slug": "3-sht", "position": 2 }
+			]
+		}
+	],
+	"products": [
+		{
+			"name": "Додстер Чилл Грилл",
+			"slug": "dodster-chill-grill",
+			"description": "Сытный додстер с курицей, свежими овощами и фирменным соусом — идеальное начало дня.",
+			"variants": [
+				{
+					"sku": "ZAVT-DCG-1",
+					"name": "Додстер Чилл Грилл (1 шт)",
+					"slug": "chill-grill-1",
+					"price": 18900,
+					"weight": 180,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["1-sht"],
+					"images": [{ "url": "/images/zavtrak/chill_grill.avif", "alt": "Додстер Чилл Грилл" }]
+				}
+			]
+		},
+		{
+			"name": "Омлет с пепперони в пите",
+			"slug": "omlet-s-pepperoni-v-pite",
+			"description": "Горячий завтрак: нежный омлет с пикантными колбасками пепперони в мягкой пшеничной пите.",
+			"variants": [
+				{
+					"sku": "ZAVT-OPP-1",
+					"name": "Омлет с пепперони (1 шт)",
+					"slug": "omlet-pep-1",
+					"price": 24900,
+					"weight": 220,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["1-sht"],
+					"images": [
+						{ "url": "/images/zavtrak/omlet_s_pepperoni.avif", "alt": "Омлет с пепперони в пите" }
+					]
+				}
+			]
+		},
+		{
+			"name": "Дэнвич с говядиной",
+			"slug": "denvich-s-govyadinoy",
+			"description": "Много сочной говядины, свежих томатов и соуса в поджаристой булочке.",
+			"variants": [
+				{
+					"sku": "ZAVT-DSG-1",
+					"name": "Дэнвич с говядиной (1 шт)",
+					"slug": "denvich-beef-1",
+					"price": 21900,
+					"weight": 200,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["1-sht"],
+					"images": [
+						{ "url": "/images/zavtrak/sendvich_s_govyadinoy.avif", "alt": "Дэнвич с говядиной" }
+					]
+				}
+			]
+		},
+		{
+			"name": "Сэндвич с ветчиной и сыром",
+			"slug": "sendvich-s-vetchinoy-i-syrom",
+			"description": "Классическое сочетание нежной ветчины и расплавленного сыра на завтрак.",
+			"variants": [
+				{
+					"sku": "ZAVT-SVS-1",
+					"name": "Сэндвич ветчина/сыр (1 шт)",
+					"slug": "sandwich-ham-1",
+					"price": 17900,
+					"weight": 170,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["1-sht"],
+					"images": [
+						{
+							"url": "/images/zavtrak/sendvich_vetchina_i_sir.avif",
+							"alt": "Сэндвич с ветчиной и сыром"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Омлет с овощами и грибами",
+			"slug": "omlet-s-ovoshchami-i-gribami",
+			"description": "Легкий и сытный омлет с добавлением шампиньонов и болгарского перца.",
+			"variants": [
+				{
+					"sku": "ZAVT-OOG-1",
+					"name": "Омлет с овощами (1 шт)",
+					"slug": "omlet-veg-1",
+					"price": 23900,
+					"weight": 210,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["1-sht"],
+					"images": [
+						{
+							"url": "/images/zavtrak/omlet_s_vrtchinoy_i_gribami.avif",
+							"alt": "Омлет с овощами и грибами"
+						}
+					]
+				}
+			]
+		}
+	]
+}

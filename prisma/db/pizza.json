@@ -1,0 +1,252 @@
+{
+	"category": {
+		"name": "Пиццы",
+		"slug": "pizzas",
+		"position": 0,
+		"isActive": true
+	},
+	"categoryAttributes": [
+		{
+			"attribute": {
+				"name": "Тип теста",
+				"slug": "tip-testa",
+				"type": "SELECT"
+			},
+			"isRequired": true,
+			"position": 0,
+			"values": [
+				{ "value": "Традиционное", "slug": "tradicionnoe", "position": 0 },
+				{ "value": "Тонкое", "slug": "tonkoe", "position": 1 }
+			]
+		},
+		{
+			"attribute": {
+				"name": "Размер",
+				"slug": "razmer",
+				"type": "SELECT"
+			},
+			"isRequired": true,
+			"position": 1,
+			"values": [
+				{ "value": "20 см", "slug": "20-sm", "position": 0 },
+				{ "value": "25 см", "slug": "25-sm", "position": 1 },
+				{ "value": "30 см", "slug": "30-sm", "position": 2 },
+				{ "value": "35 см", "slug": "35-sm", "position": 3 }
+			]
+		}
+	],
+	"products": [
+		{
+			"name": "Карбонара",
+			"slug": "carbonara",
+			"description": "Классическая пицца с ветчиной, сыром моцарелла и сливочным соусом.",
+			"variants": [
+				{
+					"sku": "PIZ-CAR-20T",
+					"name": "Карбонара Традиционная 20 см",
+					"slug": "carb-trad-20",
+					"price": 39900,
+					"weight": 320,
+					"position": 1,
+					"isDefault": false,
+					"attributeSlugs": ["tradicionnoe", "20-sm"],
+					"images": [{ "url": "/images/pizza/carbonara/1-20.avif", "alt": "Карбонара 20см" }]
+				},
+				{
+					"sku": "PIZ-CAR-25T",
+					"name": "Карбонара Традиционная 25 см",
+					"slug": "carb-trad-25",
+					"price": 45000,
+					"weight": 480,
+					"position": 2,
+					"isDefault": false,
+					"attributeSlugs": ["tradicionnoe", "25-sm"],
+					"images": [{ "url": "/images/pizza/carbonara/1-25.avif", "alt": "Карбонара 25см" }]
+				},
+				{
+					"sku": "PIZ-CAR-30T",
+					"name": "Карбонара Традиционная 30 см",
+					"slug": "carb-trad-30",
+					"price": 64900,
+					"weight": 640,
+					"position": 3,
+					"isDefault": true,
+					"attributeSlugs": ["tradicionnoe", "30-sm"],
+					"images": [{ "url": "/images/pizza/carbonara/1-30.avif", "alt": "Карбонара 30см" }]
+				},
+				{
+					"sku": "PIZ-CAR-35T",
+					"name": "Карбонара Традиционная 35 см",
+					"slug": "carb-trad-35",
+					"price": 80000,
+					"weight": 820,
+					"position": 4,
+					"isDefault": false,
+					"attributeSlugs": ["tradicionnoe", "35-sm"],
+					"images": [{ "url": "/images/pizza/carbonara/1-35.avif", "alt": "Карбонара 35см" }]
+				},
+				{
+					"sku": "PIZ-CAR-30N",
+					"name": "Карбонара Тонкая 30 см",
+					"slug": "carb-tonk-30",
+					"price": 64000,
+					"weight": 580,
+					"position": 5,
+					"isDefault": false,
+					"attributeSlugs": ["tonkoe", "30-sm"],
+					"images": [{ "url": "/images/pizza/carbonara/2-30.avif", "alt": "Карбонара тонкая 30см" }]
+				},
+				{
+					"sku": "PIZ-CAR-35N",
+					"name": "Карбонара Тонкая 35 см",
+					"slug": "carb-tonk-35",
+					"price": 79000,
+					"weight": 760,
+					"position": 6,
+					"isDefault": false,
+					"attributeSlugs": ["tonkoe", "35-sm"],
+					"images": [{ "url": "/images/pizza/carbonara/2-35.avif", "alt": "Карбонара тонкая 35см" }]
+				}
+			]
+		},
+		{
+			"name": "Маргарита",
+			"slug": "margarita",
+			"description": "Традиционный рецепт с томатами, увеличенной порцией моцареллы и итальянскими травами.",
+			"variants": [
+				{
+					"sku": "PIZ-MAR-25T",
+					"name": "Маргарита Традиционная 25 см",
+					"slug": "marg-trad-25",
+					"price": 46900,
+					"weight": 470,
+					"position": 1,
+					"isDefault": false,
+					"attributeSlugs": ["tradicionnoe", "25-sm"],
+					"images": [{ "url": "/images/pizza/margarita/1-25.avif", "alt": "Маргарита 25см" }]
+				},
+				{
+					"sku": "PIZ-MAR-30T",
+					"name": "Маргарита Традиционная 30 см",
+					"slug": "marg-trad-30",
+					"price": 59900,
+					"weight": 630,
+					"position": 2,
+					"isDefault": true,
+					"attributeSlugs": ["tradicionnoe", "30-sm"],
+					"images": [{ "url": "/images/pizza/margarita/1-30.avif", "alt": "Маргарита 30см" }]
+				},
+				{
+					"sku": "PIZ-MAR-35T",
+					"name": "Маргарита Традиционная 35 см",
+					"slug": "marg-trad-35",
+					"price": 95000,
+					"weight": 810,
+					"position": 3,
+					"isDefault": false,
+					"attributeSlugs": ["tradicionnoe", "35-sm"],
+					"images": [{ "url": "/images/pizza/margarita/1-35.avif", "alt": "Маргарита 35см" }]
+				},
+				{
+					"sku": "PIZ-MAR-30N",
+					"name": "Маргарита Тонкая 30 см",
+					"slug": "marg-tonk-30",
+					"price": 74000,
+					"weight": 570,
+					"position": 4,
+					"isDefault": false,
+					"attributeSlugs": ["tonkoe", "30-sm"],
+					"images": [{ "url": "/images/pizza/margarita/2-30.avif", "alt": "Маргарита тонкая 30см" }]
+				},
+				{
+					"sku": "PIZ-MAR-35N",
+					"name": "Маргарита Тонкая 35 см",
+					"slug": "marg-tonk-35",
+					"price": 94000,
+					"weight": 750,
+					"position": 5,
+					"isDefault": false,
+					"attributeSlugs": ["tonkoe", "35-sm"],
+					"images": [{ "url": "/images/pizza/margarita/2-35.avif", "alt": "Маргарита тонкая 35см" }]
+				}
+			]
+		},
+		{
+			"name": "Бургер-пицца",
+			"slug": "burger-pizza",
+			"description": "Пицца с пряной говядиной и сыром чеддер",
+			"variants": [
+				{
+					"sku": "PIZ-BUR-20T",
+					"name": "Бургер-пицца Традиционная 20 см",
+					"slug": "burg-trad-20",
+					"price": 42000,
+					"weight": 340,
+					"position": 1,
+					"isDefault": false,
+					"attributeSlugs": ["tradicionnoe", "20-sm"],
+					"images": [{ "url": "/images/pizza/burger_pizza/1-20.avif", "alt": "Бургер-пицца 20см" }]
+				},
+				{
+					"sku": "PIZ-BUR-25T",
+					"name": "Бургер-пицца Традиционная 25 см",
+					"slug": "burg-trad-25",
+					"price": 52000,
+					"weight": 510,
+					"position": 2,
+					"isDefault": false,
+					"attributeSlugs": ["tradicionnoe", "25-sm"],
+					"images": [{ "url": "/images/pizza/burger_pizza/1-25.avif", "alt": "Бургер-пицца 25см" }]
+				},
+				{
+					"sku": "PIZ-BUR-30T",
+					"name": "Бургер-пицца Традиционная 30 см",
+					"slug": "burg-trad-30",
+					"price": 72000,
+					"weight": 680,
+					"position": 3,
+					"isDefault": true,
+					"attributeSlugs": ["tradicionnoe", "30-sm"],
+					"images": [{ "url": "/images/pizza/burger_pizza/1-30.avif", "alt": "Бургер-пицца 30см" }]
+				},
+				{
+					"sku": "PIZ-BUR-35T",
+					"name": "Бургер-пицца Традиционная 35 см",
+					"slug": "burg-trad-35",
+					"price": 92000,
+					"weight": 870,
+					"position": 4,
+					"isDefault": false,
+					"attributeSlugs": ["tradicionnoe", "35-sm"],
+					"images": [{ "url": "/images/pizza/burger_pizza/1-35.avif", "alt": "Бургер-пицца 35см" }]
+				},
+				{
+					"sku": "PIZ-BUR-30N",
+					"name": "Бургер-пицца Тонкая 30 см",
+					"slug": "burg-tonk-30",
+					"price": 71000,
+					"weight": 620,
+					"position": 5,
+					"isDefault": false,
+					"attributeSlugs": ["tonkoe", "30-sm"],
+					"images": [
+						{ "url": "/images/pizza/burger_pizza/2-30.avif", "alt": "Бургер-пицца тонкая 30см" }
+					]
+				},
+				{
+					"sku": "PIZ-BUR-35N",
+					"name": "Бургер-пицца Тонкая 35 см",
+					"slug": "burg-tonk-35",
+					"price": 91000,
+					"weight": 810,
+					"position": 6,
+					"isDefault": false,
+					"attributeSlugs": ["tonkoe", "35-sm"],
+					"images": [
+						{ "url": "/images/pizza/burger_pizza/2-35.avif", "alt": "Бургер-пицца тонкая 35см" }
+					]
+				}
+			]
+		}
+	]
+}

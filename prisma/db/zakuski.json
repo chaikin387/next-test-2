@@ -1,0 +1,137 @@
+{
+	"category": {
+		"name": "Закуски",
+		"slug": "zakuski",
+		"position": 3,
+		"isActive": true
+	},
+	"categoryAttributes": [
+		{
+			"attribute": {
+				"name": "Порция",
+				"slug": "porciya",
+				"type": "SELECT"
+			},
+			"isRequired": true,
+			"position": 0,
+			"values": [
+				{ "value": "Стандартная", "slug": "standartnaya", "position": 0 },
+				{ "value": "Большая", "slug": "bolshaya", "position": 1 }
+			]
+		},
+		{
+			"attribute": {
+				"name": "Количество",
+				"slug": "kolichestvo",
+				"type": "SELECT"
+			},
+			"isRequired": true,
+			"position": 1,
+			"values": [
+				{ "value": "3 шт", "slug": "3-sht", "position": 0 },
+				{ "value": "5 шт", "slug": "5-sht", "position": 1 },
+				{ "value": "9 шт", "slug": "9-sht", "position": 2 },
+				{ "value": "12 шт", "slug": "12-sht", "position": 3 }
+			]
+		}
+	],
+	"products": [
+		{
+			"name": "Картофель из печи",
+			"slug": "kartofel-iz-pechi",
+			"description": "Хрустящий запечённый картофель с ароматными специями. Мы готовим его в печи, а не в масле, чтобы сохранить вкус.",
+			"variants": [
+				{
+					"sku": "ZAKU-KIP-STD",
+					"name": "Картофель Стандарт (80г)",
+					"slug": "kartof-std",
+					"price": 14900,
+					"weight": 80,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["standartnaya"],
+					"images": [
+						{
+							"url": "/images/zakuski/kartofel_fri/kartofel_fri_1.avif",
+							"alt": "Картофель из печи малый"
+						}
+					]
+				},
+				{
+					"sku": "ZAKU-KIP-BIG",
+					"name": "Картофель Большой (160г)",
+					"slug": "kartof-big",
+					"price": 22900,
+					"weight": 160,
+					"position": 2,
+					"isDefault": false,
+					"attributeSlugs": ["bolshaya"],
+					"images": [
+						{
+							"url": "/images/zakuski/kartofel_fri/kartofel_fri_2.avif",
+							"alt": "Картофель из печи большой"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Креветки",
+			"slug": "krevetki",
+			"description": "Крупные сочные креветки в хрустящей панировке. Подаются горячими.",
+			"variants": [
+				{
+					"sku": "ZAKU-KREV-3",
+					"name": "Креветки (3 шт)",
+					"slug": "krev-3",
+					"price": 24900,
+					"weight": 60,
+					"position": 1,
+					"isDefault": false,
+					"attributeSlugs": ["3-sht"],
+					"images": [{ "url": "/images/zakuski/krevetki/krevetki-3.avif", "alt": "Креветки 3шт" }]
+				},
+				{
+					"sku": "ZAKU-KREV-5",
+					"name": "Креветки (5 шт)",
+					"slug": "krev-5",
+					"price": 38900,
+					"weight": 100,
+					"position": 2,
+					"isDefault": true,
+					"attributeSlugs": ["5-sht"],
+					"images": [{ "url": "/images/zakuski/krevetki/krevetki-5.avif", "alt": "Креветки 5шт" }]
+				},
+				{
+					"sku": "ZAKU-KREV-9",
+					"name": "Креветки (9 шт)",
+					"slug": "krev-9",
+					"price": 59900,
+					"weight": 180,
+					"position": 3,
+					"isDefault": false,
+					"attributeSlugs": ["9-sht"],
+					"images": [{ "url": "/images/zakuski/krevetki/krevetki-9.avif", "alt": "Креветки 9шт" }]
+				}
+			]
+		},
+		{
+			"name": "Куриные наггетсы",
+			"slug": "kurinye-naggetsy",
+			"description": "Нежное куриное филе в золотистой панировке. Классика, которую любят все.",
+			"variants": [
+				{
+					"sku": "ZAKU-NAG-5",
+					"name": "Наггетсы (5 шт)",
+					"slug": "nagg-5",
+					"price": 16900,
+					"weight": 120,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["5-sht"],
+					"images": [{ "url": "/images/zakuski/kurinie_naggetsi.avif", "alt": "Наггетсы 5шт" }]
+				}
+			]
+		}
+	]
+}

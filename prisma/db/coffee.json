@@ -1,0 +1,115 @@
+{
+	"category": {
+		"name": "Кофе",
+		"slug": "kofe",
+		"position": 4,
+		"isActive": true
+	},
+	"categoryAttributes": [
+		{
+			"attribute": {
+				"name": "Объем",
+				"slug": "obem",
+				"type": "SELECT"
+			},
+			"isRequired": true,
+			"position": 0,
+			"values": [
+				{ "value": "0.2 л", "slug": "0-2-l", "position": 0 },
+				{ "value": "0.3 л", "slug": "0-3-l", "position": 1 },
+				{ "value": "0.4 л", "slug": "0-4-l", "position": 2 }
+			]
+		}
+	],
+	"products": [
+		{
+			"name": "Американо",
+			"slug": "americano",
+			"description": "Классический кофе на основе эспрессо с добавлением горячей воды. Насыщенный вкус и бодрящий аромат.",
+			"variants": [
+				{
+					"sku": "COF-AMR-02",
+					"name": "Американо 0.2 л",
+					"slug": "amr-02",
+					"price": 9900,
+					"weight": 210,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["0-2-l"],
+					"images": [
+						{ "url": "/images/kofe/amerikano/amerikano-200.avif", "alt": "Американо 0.2л" }
+					]
+				},
+				{
+					"sku": "COF-AMR-03",
+					"name": "Американо 0.3 л",
+					"slug": "amr-03",
+					"price": 12900,
+					"weight": 315,
+					"position": 2,
+					"isDefault": false,
+					"attributeSlugs": ["0-3-l"],
+					"images": [
+						{ "url": "/images/kofe/amerikano/amerikano-300.avif", "alt": "Американо 0.3л" }
+					]
+				}
+			]
+		},
+		{
+			"name": "Капучино Яблочный пирог",
+			"slug": "kapuchino-yablochniy-pirog",
+			"description": "Авторский напиток: нежный капучино с добавлением сиропа со вкусом домашнего яблочного пирога и корицы.",
+			"variants": [
+				{
+					"sku": "COF-CYP-02",
+					"name": "Капучино Яблочный 0.2 л",
+					"slug": "cap-apple-02",
+					"price": 18900,
+					"weight": 220,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["0-2-l"],
+					"images": [
+						{ "url": "/images/kofe/capuccino_yablochniy.avif", "alt": "Капучино Яблочный пирог" }
+					]
+				}
+			]
+		},
+		{
+			"name": "Латте",
+			"slug": "latte",
+			"description": "Самый молочный кофе: порция эспрессо и много нежного вспененного молока.",
+			"variants": [
+				{
+					"sku": "COF-LAT-02",
+					"name": "Латте 0.2 л",
+					"slug": "latte-02",
+					"price": 16900,
+					"weight": 230,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["0-2-l"],
+					"images": [{ "url": "/images/kofe/latte.avif", "alt": "Латте 0.2л" }]
+				}
+			]
+		},
+		{
+			"name": "Кокосовый Латте",
+			"slug": "kokosoviy-latte",
+			"description": "Экзотическая вариация классического латте с выраженным вкусом и ароматом кокоса.",
+			"variants": [
+				{
+					"sku": "COF-KKL-02",
+					"name": "Кокосовый Латте 0.2 л",
+					"slug": "latte-coco-02",
+					"price": 19900,
+					"weight": 235,
+					"position": 1,
+					"isDefault": true,
+					"attributeSlugs": ["0-2-l"],
+					"images": [{ "url": "/images/kofe/kokosoviy_latte.avif", "alt": "Кокосовый Латте 0.2л" }]
+				}
+			]
+		}
+	]
+}
