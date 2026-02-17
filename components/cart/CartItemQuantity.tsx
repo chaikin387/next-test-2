@@ -13,35 +13,41 @@ interface Props {
 }
 
 export const CartItemQuantity = ({ id, quantity, disabled, startTransition }: Props) => {
-	const handleUpdate = (delta: number) => {
-		startTransition(() => updateQuantity(id, quantity + delta))
+	const handleDecrease = () => {
+		startTransition(() => updateQuantity(id, quantity - 1))
+	}
+
+	const handleIncrease = () => {
+		startTransition(() => updateQuantity(id, quantity + 1))
 	}
 
 	return (
 		<div
 			className={cn(
-				'bg-secondary flex w-28 items-center gap-2 rounded-md p-1',
+				'border-input bg-background inline-flex items-center rounded-md border',
 				disabled && 'pointer-events-none opacity-50',
 			)}
 		>
 			<Button
 				variant='ghost'
 				size='icon'
-				className='hover:bg-primary hover:text-accent size-8'
-				onClick={() => handleUpdate(-1)}
+				className='border-input hover:bg-primary hover:text-primary-foreground h-8 w-8 rounded-r-none border-r'
+				onClick={handleDecrease}
 			>
-				<Minus size={14} />
+				<Minus className='h-3 w-3' />
 			</Button>
 
-			<span className='w-6 text-center text-sm font-bold'>{quantity}</span>
+			<span className='flex h-8 w-10 items-center justify-center text-sm font-medium tabular-nums'>
+				{quantity}
+			</span>
 
 			<Button
 				variant='ghost'
 				size='icon'
-				className='hover:bg-primary hover:text-accent size-8'
-				onClick={() => handleUpdate(1)}
+				className='border-input hover:bg-primary hover:text-primary-foreground h-8 w-8 rounded-l-none border-l'
+				onClick={handleIncrease}
 			>
-				<Plus size={14} />
+				<Plus className='h-3 w-3' />
 			</Button>
 		</div>
 	)

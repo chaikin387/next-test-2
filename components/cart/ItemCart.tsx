@@ -77,7 +77,6 @@ export const ItemCart = ({ cart }: Props) => {
 							size='sm'
 							disabled={isPending}
 							onClick={() => startTransition(clearCart)}
-							className='text-destructive hover:bg-destructive/10 hover:text-destructive transition-colors'
 						>
 							Очистить корзину
 							<Trash2 className='ml-2 size-4' />
@@ -151,7 +150,6 @@ export const ItemCart = ({ cart }: Props) => {
 											variant='ghost'
 											disabled={isPending}
 											onClick={() => startTransition(() => removeItem(item.id))}
-											className='text-muted-foreground hover:text-destructive transition-colors'
 										>
 											<Trash2 className='size-5' />
 										</Button>
